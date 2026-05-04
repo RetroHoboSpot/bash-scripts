@@ -69,3 +69,6 @@ The script **detects Docker Compose projects automatically**, pulls updated imag
 
 # Dry-run + non-interactive
 ./docker-compose-update.sh --dry-run --auto-yes
+
+
+#Copilot used to clean up the script fromat and to add the dry run mode, Copoilt used to made the README.MD
