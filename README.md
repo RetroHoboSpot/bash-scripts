@@ -8,18 +8,22 @@ A production‑safe Bash script to **automatically update Docker Compose stacks*
 
 The script **detects Docker Compose projects automatically**, pulls updated images, **restarts stacks only when updates exist**, and generates **audit‑ready summary reports**. It is designed for **servers, maintenance windows, and unattended cron execution**.
 
-# CBF reading and juts want to sent it.
-```bash
-curl -fsSL https://raw.githubusercontent.com/RetroHoboSpot/bash-scripts/main/docker-compose-update.sh |
+---
+## Send it 
 
-## for he less send it option, (what you should do) hell i dont know the long term damage this coul do!
-# -o keeps orininal, less 
-curl -fsSL https://raw.githubusercontent.com/RetroHoboSpot/bash-scripts/main/docker-compose-update.sh \
+- one liner (send it)
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/RetroHoboSpot/bash-scripts/main/docker-compose-update.sh | bash
+  ```
+- Download + run commands (safe & explicit)
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/RetroHoboSpot/bash-scripts/main/docker-compose-update.sh \
   -o docker-compose-update.sh
-less docker-compose-update.sh
-chmod +x docker-compose-update.sh
-sudo ./docker-compose-update.sh --dry-run
+  chmod +x docker-compose-update.sh
+  ./docker-compose-update.sh
+  ```
 
+might need a sudo, your rodeo you do you. 
 
 
 ---
